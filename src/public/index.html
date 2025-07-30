@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Natural Language Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pokémon Natural Language Search</h1>
+            <p>Ask questions about Pokémon in natural language</p>
+        </header>
+        
+        <div class="search-container">
+            <input type="text" id="question-input" placeholder="e.g., which pokemon is electric type and a rat?" autofocus>
+            <button id="search-button">Search</button>
+        </div>
+        
+        <div class="examples">
+            <h3>Example questions:</h3>
+            <ul>
+                <li>Show me all electric type Pokémon</li>
+                <li>Which Pokémon is water type and can fly?</li>
+                <li>Find Pokémon that are fire type</li>
+                <li>What Pokémon is a dragon?</li>
+            </ul>
+        </div>
+        
+        <div class="results-container">
+            <h2>Results</h2>
+            <div id="results-area">
+                <p class="placeholder">Your results will appear here...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Load the compromise library for NLP -->
+    <script src="https://unpkg.com/compromise"></script>
+    <script src="https://unpkg.com/compromise-numbers"></script>
+    
+    <!-- Load our custom scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

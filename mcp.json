@@ -1,0 +1,28 @@
+{
+  "name": "pokemon-mcp",
+  "version": "1.0.0",
+  "description": "Pokemon MCP Server",
+  "resources": {
+    "pokemon": {
+      "description": "Get Pokemon by name or ID",
+      "parameters": {
+        "identifier": {
+          "type": "string",
+          "description": "Pokemon name or ID"
+        }
+      }
+    },
+    "types": {
+      "description": "Get all Pokemon types"
+    },
+    "pokemon-by-type": {
+      "description": "Get Pokemon by type",
+      "parameters": {
+        "typeName": {
+          "type": "string",
+          "description": "Pokemon type name"
+        }
+      }
+    }
+  }
+}
